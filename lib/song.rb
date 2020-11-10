@@ -31,7 +31,7 @@ class Song
     end
     
     def self.genre_count
-        binding.pry
+       
         @@genres.each do |g|
             if @@genre_count[g]  
                 @@genre_count[g] += 1
@@ -49,7 +49,7 @@ class Song
             if @@artist_count[s]
                 @@artist_count[s] += 1
             else
-                @@artist_count = 1
+                @@artist_count[s] = 1
             end
         end
         @@artist_count
